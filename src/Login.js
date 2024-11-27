@@ -14,6 +14,9 @@ export default function Login() {
         <p>
             <input type="password" placeholder="Enter Password"></input>
         </p>
+        <p>
+            <input type="checkbox"></input>Remember me
+        </p>
         <button>Login</button>
         <hr></hr>
         <button onClick={handleSignup}>Create Account</button>
