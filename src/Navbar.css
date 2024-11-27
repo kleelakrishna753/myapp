@@ -1,0 +1,11 @@
+li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+    background-color: bisque;
+}
+
+ul {
+    background-color: aquamarine;
+}

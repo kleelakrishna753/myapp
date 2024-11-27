@@ -6,26 +6,26 @@ import Content from './Content';
 import Footer from './Footer';
 import Cart from './Cart'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import Signup from './Signup';
 
 export default function App() {
     return(
         <>
           <Header></Header>
-
             <BrowserRouter>
-                <p>
-                    <Link to="/content">Home</Link> | <Link to="/cart">Cart</Link>
-                </p>
+                <Navbar></Navbar>
                 <hr></hr>
                 <Routes>
                     <Route index element={<Content/>} />
                     <Route path='content' element={<Content/>}/>
                     <Route path='cart' element={<Cart/>}/>
+                    <Route path='login' element={<Login/>}/>
+                    <Route path='signup' element={<Signup/>}/>
                 </Routes>
 
             </BrowserRouter>
 
-          <Login/>
           <Footer></Footer>
         </>
     );
