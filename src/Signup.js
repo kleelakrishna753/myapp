@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Signup() {
+    const Navigate = useNavigate() ;
+    const handleLogin = () =>{
+      Navigate('/login')
+    }
+    const handleSubmit = () => {
+        alert('Your data is SOLD')
+    }
     return (
         <div>
             <p>
@@ -20,8 +28,14 @@ export default function Signup() {
             </p>
             <p>
                 <input type="password" placeholder="Retype Password"></input>
-            </p>            
-            <button>Signup</button>
+            </p>
+            <p>
+                <input type="checkbox"></input>Yes I read all T&C
+            </p>        
+            <button onClick={handleSubmit}>Signup</button>
+            <br></br>
+            <p>Already a User?</p>
+            <button onClick={handleLogin}>Login</button>
             <hr></hr>
         </div>
       )
