@@ -8,7 +8,7 @@ export default function Admin() {
     const [price, setprice]= useState([])
     const [desc, setdesc]= useState([])
     const [url, seturl]= useState([])
-    const api = "http://localhost:8080"
+    const api = "https://backend-8qt6.onrender.com"
     //const api = "http://mongodb+srv://sparestorage36:IndMjBkzX0Y7PsAJ@cluster0.on6eg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
     const addproducts = () => {
