@@ -5,7 +5,7 @@ import axios from 'axios';
 export default function Contain() {
   const [products, setProducts]= useState([])
   // const [id, setid]= useState([])
-  const url ="http://localhost:8080/"
+  const url ="https://backend-8qt6.onrender.com"
   //const url ="http://mongodb+srv://sparestorage36:IndMjBkzX0Y7PsAJ@cluster0.on6eg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/"
   
   const getdata = async() =>{
